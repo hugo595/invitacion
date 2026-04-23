@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XVIII Años — Invitación Digital</title>
+    <meta name="description" content="Estás invitado a celebrar mis 18 años. Una noche mágica llena de sorpresas.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="petals-container" class="petals-container"></div>
+    <!-- Envelope Section -->
+    <div id="envelope-container" class="envelope-container">
+        <div class="envelope" id="envelope">
+            <div class="envelope-front">
+                <div class="damask-pattern"></div>
+            </div>
+            <div class="envelope-flap"></div>
+            <div class="wax-seal-wrapper" id="open-btn">
+                <img src="assets/wax-seal.png" alt="Sello de lacre" class="wax-seal">
+                <div class="seal-text">Estás invitado</div>
+            </div>
+            <div class="envelope-back"></div>
+            <div class="letter">
+                <div class="letter-text">
+                    <h2>Analy Luna</h2>
+                    <p>Mis 18 Años</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Invitation Content -->
+    <main id="invitation-content" class="hidden">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-card-container">
+                <div class="hero-card">
+                    <div class="front">
+                        <div class="card-top">
+                            <p class="card-top-para">Mis 18 Años</p>
+                        </div>
+                        <h1 class="name" style="font-size: 3rem; margin-top: 2rem;">¡Gira la tarjeta!</h1>
+                    </div>
+                    <div class="back">
+                        <p class="subtitle">Estás invitado/a</p>
+                        <h1 class="name">Analy Luna</h1>
+                        <p class="date">11 de Julio de 2026</p>
+                        <p class="rsvp-reminder">Confirma tu asistencia</p>
+                        <a href="#rsvp" class="btn btn-primary">¡Quiero ir!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parents Section -->
+        <section id="parents" class="section parents-section">
+            <div class="parents-content">
+                <p class="parents-intro">En compañía de mis padres</p>
+                <h3 class="parents-names">Nombre del Papá & Nombre de la Mamá</h3>
+                <p class="parents-intro">y mis padrinos</p>
+                <h3 class="parents-names">Nombre del Padrino & Nombre de la Madrina</h3>
+                <p class="parents-invite">Tenemos el honor de invitarte a celebrar mis</p>
+                <h2 class="parents-18">18 Años</h2>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown" class="section countdown">
+            <h2 class="section-title">Faltan</h2>
+            <div class="countdown-container">
+                <div class="time-box">
+                    <span id="cd-months" class="time-number">00</span>
+                    <span class="time-label">Meses</span>
+                </div>
+                <div class="time-box">
+                    <span id="cd-days" class="time-number">00</span>
+                    <span class="time-label">Días</span>
+                </div>
+                <div class="time-box">
+                    <span id="cd-hours" class="time-number">00</span>
+                    <span class="time-label">Horas</span>
+                </div>
+                <div class="time-box">
+                    <span id="cd-minutes" class="time-number">00</span>
+                    <span class="time-label">Minutos</span>
+                </div>
+                <div class="time-box">
+                    <span id="cd-seconds" class="time-number">00</span>
+                    <span class="time-label">Segundos</span>
+                </div>
+            </div>
+            <div class="countdown-extras">
+                <p class="exact-date">11 de Julio de 2026 • 18:00 HRS</p>
+                <p class="emotional-quote">¡No puedo esperar para celebrar contigo!</p>
+                <button id="add-calendar-btn" class="btn btn-primary calendar-btn">
+                    🗓️ Añadir a mi Calendario
+                </button>
+            </div>
+        </section>
+
+        <!-- Program Section -->
+        <section id="program" class="section program">
+            <h2 class="section-title">Programa de la fiesta</h2>
+            <div class="program-grid">
+                <div class="program-item">
+                    <div class="program-icon">🕒</div>
+                    <div class="program-time">18:00</div>
+                    <div class="program-desc">Recepción de invitados</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-icon">🥂</div>
+                    <div class="program-time">19:00</div>
+                    <div class="program-desc">Brindis y palabras</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-icon">🍽️</div>
+                    <div class="program-time">20:00</div>
+                    <div class="program-desc">Cena de Gala</div>
+                </div>
+                <div class="program-item">
+                    <div class="program-icon">💃</div>
+                    <div class="program-time">21:30</div>
+                    <div class="program-desc">Vals y apertura de pista</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dress Code Section -->
+        <section id="dress-code" class="section dress-code-section">
+            <h2 class="section-title">Código de Vestimenta</h2>
+            <div class="dress-code-card">
+                <div class="dress-code-content">
+                    <h3 class="dress-code-title">Formal / Etiqueta</h3>
+                    <div class="divider-elegant"></div>
+                    <p class="dress-code-desc">Te pedimos amablemente vestir de gala para acompañarnos en esta ocasión tan especial.</p>
+                    
+                    <div class="reserved-colors">
+                        <p class="reserved-title">COLORES RESERVADOS</p>
+                        <div class="color-swatches">
+                            <div class="swatch-container">
+                                <div class="swatch white"></div>
+                                <span>Blanco</span>
+                            </div>
+                            <div class="swatch-container">
+                                <div class="swatch rose"></div>
+                                <span>Rosa Palo</span>
+                            </div>
+                        </div>
+                        <p class="small-text">Por favor evita vestir en estas tonalidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="section location-section">
+            <h2 class="section-title">Ubicación</h2>
+            <div class="location-card">
+                <h3>Salón "El Gran Jardín"</h3>
+                <p class="address">Av. Principal #123, Col. Centro, Ciudad, Estado.</p>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.661135252873!2d-99.1676646!3d19.4270206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35794a6019%3A0x600100778c1a7c3!2sAngel%20de%20la%20Independencia!5e0!3m2!1ses!2smx!4v1614725000000!5m2!1ses!2smx" 
+                        width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div class="action-btns">
+                    <a href="https://maps.google.com" target="_blank" class="btn btn-map">📍 Abrir en Google Maps</a>
+                    <a href="https://waze.com/ul" target="_blank" class="btn btn-waze">🚗 Abrir en Waze</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gifts Section -->
+        <section id="gifts" class="section gifts-section">
+            <h2 class="section-title">Mesa de Regalos</h2>
+            <div class="gifts-card">
+                <div class="gift-icon">✉️🎁</div>
+                <h3>Lluvia de Sobres</h3>
+                <p>El mejor regalo es tu presencia. Si deseas tener un detalle adicional conmigo, puedes hacerlo a través de una aportación en efectivo el día del evento en el buzón, o mediante transferencia.</p>
+                
+                <div class="bank-details">
+                    <p><strong>Banco:</strong> BBVA Bancomer</p>
+                    <p><strong>Titular:</strong> Analy Luna</p>
+                    <p><strong>Cuenta / CLABE:</strong> <span id="account-number">012345678901234567</span></p>
+                    <button id="copy-btn" class="btn btn-copy">📋 Copiar Número</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section id="rsvp" class="section rsvp">
+            <h2 class="section-title">Confirmación de Asistencia</h2>
+            <form id="rsvp-form" class="rsvp-form">
+                <div class="form-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group attendance">
+                    <p>¿Podrás asistir?</p>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="yes" checked>
+                            <span>Confirmo con alegría</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="no">
+                            <span>Lo siento, no podré asistir</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje para el cumpleañero/a</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">💬 Confirmar por WhatsApp</button>
+            </form>
+        </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
