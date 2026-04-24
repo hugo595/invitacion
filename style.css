@@ -820,25 +820,43 @@ h1, h2, h3 {
 
 /* Gifts Section */
 .gifts-section {
-    background-color: #fff9f9;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
+
+.gifts-section .section-title {
+    color: white;
+}
+
+.gifts-section .section-title::after {
+    background: var(--gold, #d4af37);
+}
+
 .gifts-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
     max-width: 600px;
     margin: 0 auto;
     padding: 3rem;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(229, 179, 163, 0.15);
-    border: 2px solid var(--rose-gold);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.6);
 }
 .gift-icon { font-size: 3rem; margin-bottom: 1rem; }
 .bank-details {
     margin-top: 2rem;
     padding: 1.5rem;
-    background-color: var(--mint-light);
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
     text-align: left;
+    color: white;
 }
 .bank-details p { margin-bottom: 0.5rem; }
 .btn-copy {
