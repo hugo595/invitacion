@@ -237,3 +237,28 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// RSVP Form to WhatsApp
+const rsvpForm = document.getElementById('rsvp-form');
+if (rsvpForm) {
+    rsvpForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const name = document.getElementById('name').value;
+        const attendance = document.querySelector('input[name="attendance"]:checked').value;
+        const message = document.getElementById('message').value;
+        
+        const phoneNumber = "527713149904";
+        
+        let whatsappMessage = `¡Hola! He recibido la invitación a tus 18 Años.%0A%0A`;
+        whatsappMessage += `*Nombre:* ${name}%0A`;
+        whatsappMessage += `*¿Asistiré?:* ${attendance === 'yes' ? 'Sí, confirmo con alegría 🎉' : 'Lo siento, no podré asistir 😔'}%0A`;
+        
+        if (message.trim() !== '') {
+            whatsappMessage += `*Mensaje:* ${message}`;
+        }
+        
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+        window.open(whatsappUrl, '_blank');
+    });
+}
