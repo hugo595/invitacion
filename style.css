@@ -41,9 +41,11 @@ h1, h2, h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&q=80&w=2000');
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('assets/fondo-rosas.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f8e1e1; /* var(--rose-blush) */
     perspective: 1000px;
     transition: var(--transition);
     animation: background-sway 20s ease-in-out infinite;
@@ -51,8 +53,8 @@ h1, h2, h3 {
 }
 
 @keyframes background-sway {
-    0%, 100% { background-position: 50% 50%; transform: scale(1); }
-    50% { background-position: 52% 48%; transform: scale(1.05); }
+    0%, 100% { background-position: 50% 50%; }
+    50% { background-position: 52% 48%; }
 }
 
 /* Pollen/Sparkle Effect over flowers */
@@ -1196,6 +1198,12 @@ h1, h2, h3 {
     }
     50% {
         transform: translateY(-40px) rotate(20deg);
+    }
+}
+
+@media (min-width: 768px) {
+    .envelope-container {
+        background-size: contain;
     }
 }
 
