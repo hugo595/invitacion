@@ -490,7 +490,7 @@ h1, h2, h3 {
 
 /* Countdown */
 .countdown {
-    background-color: #fff9f9;
+    background-color: transparent;
 }
 
 .countdown-container {
@@ -503,8 +503,9 @@ h1, h2, h3 {
 }
 
 .time-box {
-    background: white;
-    border: 2px solid var(--rose-gold);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(229, 179, 163, 0.6);
     border-radius: 15px;
     padding: 1.5rem;
     min-width: 100px;
@@ -632,11 +633,17 @@ h1, h2, h3 {
 }
 
 /* Parents Section */
+.parents-section, .countdown {
+    background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .parents-section {
     text-align: center;
-    background-color: #fff9f9;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 .parents-intro {
     font-size: 1.1rem;
