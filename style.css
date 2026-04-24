@@ -634,7 +634,7 @@ h1, h2, h3 {
 
 /* Parents Section */
 .parents-section, .countdown {
-    background-image: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&q=80&w=2000');
+    background-image: linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)), url('https://images.unsplash.com/photo-1518895949257-7621bf272d62?auto=format&fit=crop&q=80&w=2000');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
