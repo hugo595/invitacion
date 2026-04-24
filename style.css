@@ -92,10 +92,22 @@ h1, h2, h3 {
     transform-style: preserve-3d;
     cursor: pointer;
     transition: var(--transition);
-    animation: envelope-float 4s ease-in-out infinite;
+    animation: envelope-entrance 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards, envelope-float 4s ease-in-out infinite 1.5s;
     border-radius: 4px;
     z-index: 10;
 }
+
+@keyframes envelope-entrance {
+    0% {
+        opacity: 0;
+        transform: translateY(150px) rotateX(30deg) rotateY(-15deg) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotateX(4deg) rotateY(-2deg) scale(1);
+    }
+}
+
 
 /* Magical Glow */
 .envelope::before {
