@@ -572,36 +572,44 @@ h1, h2, h3 {
 }
 
 /* Program */
+.program {
+    padding: 7rem 10%;
+}
+
 .program-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
 }
 
 .program-item {
-    padding: 2rem;
+    padding: 3.5rem 2rem;
     text-align: center;
     background: #fdfdfd;
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid #eee;
     transition: transform 0.3s ease;
 }
 
 .program-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
 .program-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .program-time {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: var(--accent-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.program-desc {
+    font-size: 1.2rem;
 }
 
 /* Parents Section */
