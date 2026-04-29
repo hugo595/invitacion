@@ -106,7 +106,7 @@ h1, h2, h3 {
     background-image: url('assets/sobre.jpg');
     background-size: cover;
     background-position: center;
-    background-color: #2c3e50;
+    background-color: #f8e1e1; /* Color rosa suave que combina con las nuevas rosas */
     position: relative;
     box-shadow: 
         0 10px 30px rgba(0,0,0,0.3),
