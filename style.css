@@ -56,11 +56,9 @@ h1, h2, h3 {
 .click-hint {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
-    background: linear-gradient(45deg, #ff4d94, #ff99cc, #ffd700);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000;
     font-weight: 800;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
     font-style: italic;
     letter-spacing: 1px;
     z-index: 20;
