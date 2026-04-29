@@ -329,7 +329,7 @@ h1, h2, h3 {
     left: 10px;
     width: calc(100% - 20px);
     height: calc(100% - 40px);
-    background: #fff;
+    background: url('assets/sobre.jpg') center/cover no-repeat;
     z-index: 0;
     opacity: 0;
     transition: var(--transition);
@@ -341,6 +341,15 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: center;
     border-radius: 5px;
+}
+
+.letter-text {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    padding: 30px 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .letter-text h2 {
