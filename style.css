@@ -685,6 +685,7 @@ h1, h2, h3 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 10vh 10%;
 }
 .parents-intro, .parents-names, .parents-invite, .parents-18 {
@@ -1039,7 +1040,8 @@ h1, h2, h3 {
     }
     
     .envelope-container, .hero-bg, .parents-section, .ceremony-section {
-        background-size: 100% 100% !important;
+        background-size: cover !important;
+        background-attachment: scroll !important; /* Fixed backgrounds are buggy on mobile, scroll is smoother */
     }
     
     .section-title {
