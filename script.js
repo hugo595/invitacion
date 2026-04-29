@@ -8,7 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
     envelope.addEventListener('click', () => {
         envelope.classList.add('open');
         const hint = document.querySelector('.click-hint');
-        if (hint) hint.style.opacity = '0';
+        if (hint) {
+            hint.style.transition = 'opacity 0.3s ease';
+            hint.style.opacity = '0';
+            setTimeout(() => hint.style.display = 'none', 300);
+        }
         
         // Wait for the animation (flap + letter sliding out) to finish
         setTimeout(() => {
