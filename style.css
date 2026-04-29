@@ -134,8 +134,8 @@ h1, h2, h3 {
 }
 
 @keyframes pulse-glow {
-    0%, 100% { opacity: 0.5; transform: scale(1); }
-    50% { opacity: 0.8; transform: scale(1.1); }
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 0.8; }
 }
 
 /* Glint effect */
@@ -174,7 +174,7 @@ h1, h2, h3 {
 }
 
 .envelope:hover {
-    transform: scale(1.02);
+    transform: none;
 }
 
 .envelope-front {
@@ -398,10 +398,7 @@ h1, h2, h3 {
     image-rendering: crisp-edges;
 }
 
-@keyframes slowZoom {
-    from { transform: scale(1); }
-    to { transform: scale(1.1); }
-}
+
 
 /* 3D Flipping Card Styles */
 .hero-card-container {
