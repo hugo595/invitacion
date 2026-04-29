@@ -39,8 +39,10 @@ h1, h2, h3 {
 .envelope-container {
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     background-image: url('assets/jardin.jpg');
     background-size: cover;
     background-position: center;
@@ -49,6 +51,24 @@ h1, h2, h3 {
     perspective: 1000px;
     transition: var(--transition);
     overflow: hidden;
+}
+
+.click-hint {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    font-style: italic;
+    letter-spacing: 1px;
+    z-index: 20;
+    animation: hintBounce 2s ease-in-out infinite;
+    text-align: center;
+    pointer-events: none;
+}
+
+@keyframes hintBounce {
+    0%, 100% { transform: translateY(0); opacity: 0.8; }
+    50% { transform: translateY(-10px); opacity: 1; }
 }
 
 @keyframes background-sway {

@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Open Envelope Logic
     envelope.addEventListener('click', () => {
         envelope.classList.add('open');
+        const hint = document.querySelector('.click-hint');
+        if (hint) hint.style.opacity = '0';
         
         // Wait for the animation (flap + letter sliding out) to finish
         setTimeout(() => {
