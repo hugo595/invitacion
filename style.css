@@ -1035,6 +1035,11 @@ h1, h2, h3 {
     /* General Settings for Mobile */
     .section {
         padding: 4rem 5%;
+        background-size: 100% 100% !important;
+    }
+    
+    .envelope-container, .hero-bg, .parents-section, .ceremony-section {
+        background-size: 100% 100% !important;
     }
     
     .section-title {
